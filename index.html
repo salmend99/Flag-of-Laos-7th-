@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <link rel="stylesheet" href="style.css"> <!-- CSS file -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+/* Flag container */
+.flag {
+  width: 450px;
+  height: 300px;
+  position: relative;
+  background-color: #CE1126;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* "The Flag" text in red space above the blue rectangle */
+.title {
+  color: white;
+  font-size: 40px;
+  margin: 25px 0 0 0; /* pushes it down a little */
+}
+
+/* Blue rectangle in middle */
+
+.blue 
+{
+  background-color: #002868;
+  height: 150px;
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%); /* centers vertically */
+}
+
+/* White circle */
+.circle {
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center; /* centers text inside circle */
+}
+
+/* "of Laos" text in circle */
+.subtitle {
+  color: black;
+  font-size: 20px;
+  margin: 0;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+<div class="flag">
+  <p class="title">The Flag</p>
+  <div class="blue">
+    <div class="circle">
+      <p class="subtitle">of Laos</p>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
